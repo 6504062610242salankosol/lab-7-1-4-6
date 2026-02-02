@@ -1,35 +1,20 @@
 /*Function Demo1:Function Calling*/
 #include<stdio.h>
-int checkNumber(int n1, int n2);
-int multiply(int n1, int n2);
 
-int main() 
+double functionM(void);
+int functionN(int n, double x);
+double functionO(double, int, double, int);
+double functionP(int a, int n, int b, int c);
+
+int main(void)
 {
-    int a,b;
-    scanf("%d %d",&a,&b);
-    if (checkNumber(a,b))
-    {
-    	printf("%d\n",multiply(a,b));
-	}  
-    else
-    {
-    	 printf("Reject\n");
-	}
-       
+    double a;         
+    int b, c, d, e;
+    double r, s, t, u, v;
+
+    a = functionM();   
+    printf("%lf\n", a);
+
     return 0;
-}
-
-
-int checkNumber(int n1, int n2)
-{
-    if (n1 > 20 && n2 <= 60)
-        return 1;   // valid
-    else
-        return 0;   // invalid
-}
-
-int multiply(int n1, int n2)
-{
-    return n1 * n2;
 }
 
