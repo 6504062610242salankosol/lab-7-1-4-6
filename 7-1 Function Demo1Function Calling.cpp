@@ -18,3 +18,17 @@ int main(void)
     return 0;
 }
 
+/*b ผิด double → int                     a = functionM();          */
+
+/*c ผิด int → double                     b = functionN(a, b);  */
+
+/*e ผิด พารามิเตอร์เกิน                      s = functionP(a,b,c,d,e);           */
+
+/*g ผิด double → int                     c = d + functionN(r,s)     */
+
+/*i ผิด ชนิดผิดทั้งหมด                      a = v + functionP(r, s, t, t);   */
+
+/*j ผิด ชนิดพารามิเตอร์ผิด                   functionP(functionN(a, a), s, t, t+r);          */
+
+/*k ผิด ชนิดพารามิเตอร์ผิด                   v = functionP(functionN(a, a), s, t, t+r);      */
+
